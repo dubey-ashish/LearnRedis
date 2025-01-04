@@ -24,20 +24,6 @@ public class RedisConfig
     {
         RedisTemplate<String,Object> redisTemplate=new RedisTemplate<>();
 
-
-<<<<<<< HEAD
-        //Configurations
-        redisTemplate.setConnectionFactory(connectionFactory());;
-
-        redisTemplate.setKeySerializer(new StringRedisSerializer());
-
-        redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
-
-        return redisTemplate;
-
-
-        
-=======
         //3-Configurations of redisTemplate
         //* ConnectionFactory
         //* KeySerializer
@@ -71,7 +57,6 @@ public class RedisConfig
         //when your program runs, that is also connected to 6379, establishing a connection with your program
         //From the terminal, you give whatever type of data as key and value as you want to give, the real project will have its own type of data like say performance aggregation DTO type thing to store in Redis (forget the terminal)
         //Redis only supports basic data types (e.g., strings, lists, sets, hashes), but not complex Java objects directly, so serialization helps store and retrieve complex real world-y java objects
->>>>>>> dfe82be (Comments added)
     }
 
 }
